@@ -1,0 +1,118 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #6a11cb, #2575fc);
+    color: white;
+    transition: background 0.5s ease;
+  }
+  
+  .weather-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .weather-header {
+    text-align: center;
+  }
+  
+  .weather-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .weather-icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+  }
+  
+  .temperature {
+    font-size: 3em;
+    margin: 0;
+  }
+  
+  .description {
+    font-size: 1.2em;
+    text-transform: capitalize;
+  }
+  
+  .extra-info {
+    font-size: 0.9em;
+    text-align: center;
+  }
+  
+  /* Sunshine effect */
+  @keyframes sunshine {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  /* Rain animation */
+  @keyframes rain {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  /* Clouds animation */
+  @keyframes clouds {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 100%;
+    }
+  }
+  
+  /* Snow animation */
+  @keyframes snow {
+    0% {
+      background-position: 50% 0%;
+    }
+    100% {
+      background-position: 50% 100%;
+    }
+  }
+  
+  /* Background styles for weather conditions */
+  .sunshine {
+    background: linear-gradient(to top, #ffdd00, #ff8800);
+    background-size: 200% 200%;
+    animation: sunshine 10s infinite alternate;
+  }
+  
+  .rain {
+    background: linear-gradient(to bottom, #4a90e2, #000);
+    background-size: 200% 200%;
+    animation: rain 10s infinite alternate;
+  }
+  
+  .clouds {
+    background: linear-gradient(to top, #b1bfd8, #667eea);
+    background-size: 200% 200%;
+    animation: clouds 10s infinite alternate;
+  }
+  
+  .snow {
+    background: linear-gradient(to bottom, #ffffff, #d8e1e8);
+    background-size: 200% 200%;
+    animation: snow 10s infinite alternate;
+  }
+  
